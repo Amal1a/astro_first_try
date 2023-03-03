@@ -1,6 +1,6 @@
 ---
 const titel = Astro.props;
-const imgPath = Astro.props;
+const imgPath = Astro.props.imgPath;
 const { newBadge } = Astro.props;
 ---
 
@@ -33,6 +33,7 @@ const { newBadge } = Astro.props;
     <div class="newbox">
       {newBadge && <p class="badge">NEW</p>}
     </div>
+    <!-- <img class="cover" src={imgPath} alt="img path" /> -->
     <img class="cover" src={imgPath} alt="img path" />
   </div>
 </article>
