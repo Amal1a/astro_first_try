@@ -1,0 +1,27 @@
+---
+import Headertop from "../components/Headertop.astro";
+import Navleft from "../components/Navleft.astro";
+import Cardsrow from "../components/Cardsrow.astro";
+import Bottomelement from "../components/Bottomelement.astro";
+import Badgerow from "../components/Badgerow.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navleft />
+    <main>
+      <Headertop /><div class="first_div">
+        <Badgerow overskrift="Browse All" />
+      </div>
+    </main>
+    <footer><Bottomelement /></footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

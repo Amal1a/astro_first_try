@@ -1,0 +1,40 @@
+---
+const titel = Astro.props;
+const imgPath = Astro.props;
+const { newBadge } = Astro.props;
+---
+
+<!-- <article>
+  <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2" alt="" />
+  <h2>{titel}</h2>
+  <p>{text}</p>
+</article>
+
+<style>
+  h2 {
+    color: aliceblue;
+    font-size: 105%;
+  }
+
+  p {
+    color: rgba(240, 248, 255, 0.708);
+  }
+  article {
+    padding: 1.5%;
+    width: 155px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 8px;
+    margin: 0.8%;
+  }
+</style> -->
+<article>
+  <div class="colorbox">
+    <h2>{titel}</h2>
+    <div class="newbox">
+      {newBadge && <p class="badge">NEW</p>}
+    </div>
+    <img class="cover" src={imgPath} alt="img path" />
+  </div>
+</article>
+
+<!-- <slot /> ?-->
